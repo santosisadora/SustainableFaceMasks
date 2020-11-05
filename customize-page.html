@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Sustainable Face Masks</title>
+<meta charset="UTF-8">
+
+<link rel="stylesheet" href="stylesheet.css">
+<link href="https://fonts.googleapis.com/css2?family=Abhaya+Libre&family=Cormorant:wght@300&family=Merienda+One&family=Playfair+Display+SC&family=Sarabun:wght@100&display=swap" rel="stylesheet">
+
+<body>
+  <div class="header">
+    <h1>Sustainable Face Masks - a sustainable way to protect your family</h1>
+  </div>
+
+  <div class="topnav">
+    <a href="index.html">Home Page</a>
+    <a href="Shop.html">Shop</a>
+    <a href="Gallery.html">Gallery</a>
+    <a href="About-us.html">About us</a>
+  </div>
+
+  <img src="women.jpg" alt="masks" style="width:100%" height="100%"><br>
+
+  <h2>Customize your own mask</h2>
+  <h3>Our exclusive MaskTech@ technology makes any type of fabric 100% effective against any harmful pathogen </h3>
+  <h4>Order now </h4>
+  <p>
+      <!--Here starts the Form to the order -->
+      <form action="/build-the-mask">
+
+    <fieldset>
+    <legend>Build your Mask</legend>
+
+     <!-- quantity -->
+     <label for="quantity">How many masks would you like to order?</label><br>
+     <input type="number" id="quantity" name="quantity" min="1" max="15">
+
+      <!--size-->
+      <p style="text-align:left;">Choose the size:</p>
+      <label for="kids"><input id="kids" type="radio" name="kids-S-M-L-XL"> Kids</label>
+      <label for="small"><input id="small" type="radio" name="kids-S-M-L-XL"> S </label>
+      <label for="medium"><input id="medium" type="radio" name="kids-S-M-L-XL"> M</label>
+      <label for="large"><input id="large" type="radio" name="kids-S-M-L-XL"> L </label>
+      <label for="xl"><input id="xl" type="radio" name="kids-S-M-L-XL"> XL</label> <br>
+      <br>
+       <!-- type of fabric -->
+       <label for="fabric">Choose your fabric:</label><br>
+       <select name="fabric" id="fabric">
+       <option value="select">-Select-</option>
+       <option value="cotton">Cotton</option>
+       <option value="denim">Denim</option>
+       <option value="silk">Silk</option>
+       <option value="wool">Wool</option>
+       <option value="cheviot">Cheviot</option>
+       <option value="georgette">Georgette</option>
+       </select> <br>
+       <br>
+       <!--Color -->
+       <label for="color">Choose the color:</label><br>
+       <select name="color" id="color">
+         <option value="select">-Select-</option>
+       <option value ="black">Black</option>
+       <option value="gray">Gray</option>
+       <option value="brown">Brown</option>
+       <option value="white">White</option>
+       <option value="red">Red</option>
+       <option value="bordeaux">Bordeaux</option>
+       <option value="darkblue">Dark Blue</option>
+       <option value="lightblue">Light Blue</option>
+       </select><br>
+       <br>
+       <!--type of design-->
+       <label for="design">Choose the Design:</label><br>
+       <select name="design" id="design">
+       <option value="select">-Select-</option>
+       <option value ="stamp">Stamp</option>
+       <option value="flowers">Flowers</option>
+       <option value="logo">Logo</option>
+       <option value="drawing">Drawing</option>
+       <option value="phrase">Phrase</option>
+       </select><br>
+       <p style="text-align:left;">For the design, you may also upload a photo/drawing from your pc :</p>
+       <form action="/action_page.php">
+       <input type="file" id="myFile" name="filename">
+       <input type="submit">
+       </form>
+
+       <br>
+       <br>
+
+      <!--observations of order-->
+      <p style="text-align:left;">If you chose a Phrase for a design, type it here:</p>
+      <textarea style="font-family:Sarabun;">Type here your phrase</textarea>
+      </fieldset>
+
+        <!--fieldset of personal info, address and payment-->
+        <fieldset>
+        <legend>Your Order Info</legend>
+        <p style="text-align:left;">How you prefer to get your mask(s)?</p>
+        <label for="normal"><input id="normal" type="radio" name="normal-express-instore">Normal delivery - within 10 business days $10</label><br>
+        <label for="express"><input id="express" type="radio" name="normal-express-instore">Express delivery - within 3 days $20</label><br>
+        <label for="store"><input id="store" type="radio" name="normal-express-instore">Pickup order at the Store - free</label><br>
+        <br>
+
+        <p style="text-align:left;"> Personal Information</p>
+
+        <label for="name">Your name:</label>
+        <input type="text" required id="name" name="personalinfo"><br>
+        <label for="phonenumber">Phone number:</label>
+        <input type="text" required id="phonenumber" name="personalinfo"><br>
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="personalinfo">
+
+        <p style="text-align:left;">Address for delivery</p>
+        <label for="streetname">Street name</label>
+        <input type="text" required id="streetname" name="address"><br>
+
+        <label for="number">Number</label>
+        <input type="text" required id="number" name="address"><br>
+
+        <label for="typeofbuilding" >Type of Building  </label>
+        <select name="typeofbuilding" id="typeofbuilding">
+        <option value="house">House</option>
+        <option value="apartment">Apartment</option>
+        <option value="condo">Condo</option>
+        </select> <br>
+
+        <label for="region"> Region  </label>
+        <select name="region" id="region">
+        <option value="downtown">Downtown</option>
+        <option value="innisfil">Innisfil</option>
+        <option value="shantybay">Shanty Bay</option>
+        <option value="grenfel">Grenfel</option>
+        </select> <br>
+        <br>
+
+
+
+        <p style="text-align:left;">Payment Options</p>
+        <label for="paymenttime">When would you like to pay?</label>
+        <select name="paymenttime" id="paymenttime">
+        <option value="online">Online</option>
+        <option value="upondelivery">Upon delivery</option>
+      </select>
+
+        <label for="paymentmethod">How would you like to pay?</label>
+        <select name="paymentmethod" id="paymentmethod">
+        <option value="cash">Cash</option>
+        <option value="creditcard">Credit Card</option>
+        <option value="debitcard">Debit Card</option>
+      </select>
+
+      </fieldset>
+
+       <!--submission button-->
+       <input type="submit" value="Order Masks">
+
+       </form>
+
+       <div class="footer">
+         <p>&copy Copyright 2020</p>
+       </div>
+
+
+
+  </body>
+  </html>
